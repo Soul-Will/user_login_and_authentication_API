@@ -104,3 +104,35 @@ Once the setup is complete, you can run the application using Uvicorn.
 
 ```sh
 uvicorn main:app --reload
+```
+
+---
+
+## 📡 API Endpoints
+
+The API provides the following endpoints:
+
+| HTTP Method | Endpoint                       | Description                            |
+| :---------- | :----------------------------- | :------------------------------------- |
+| `POST`      | `/users/register`              | Register a new user                    |
+| `POST`      | `/users/login`                 | Authenticate a user and get a token    |
+| `GET`       | `/users/`                      | Get a list of all users                |
+| `GET`       | `/users/{user_id}`             | Search for a specific user by ID       |
+| `PUT`       | `/users/{user_id}`             | Update user details                    |
+| `DELETE`    | `/users/{user_id}`             | Delete a user                          |
+| `POST`      | `/otp/generate`                | Generate OTP for email verification    |
+| `POST`      | `/otp/verify`                  | Verify OTP for email verification      |
+| `POST`      | `/password/forgot`             | Request a password reset               |
+| `POST`      | `/password/reset`              | Reset the user's password              |
+
+---
+
+## 🤝 Contributing
+
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1.  Fork the Project.
+2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`).
+3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`).
+4.  Push to the Branch (`git push origin feature/AmazingFeature`).
+5.  Open a Pull Request.
